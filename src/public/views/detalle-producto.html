@@ -4,9 +4,193 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/117b0fb8d8.js" crossorigin="anonymous"></script>
+    <!--<link rel="stylesheet" href="/css/detalle-producto.css">-->
+    <link rel="stylesheet" href="/css/normalize.css">
     <title>Detalle del producto</title>
 </head>
 <body>
+       <style>
+
+           *{
+                box-sizing: border-box;
+            }
+            .cabecera {
+                background-color: #666;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                height: 56px;
+                
+
+            }
+            
+            #fake-input{
+                
+                padding: 10px;
+                background-color: white;
+                display: flex;
+                flex-direction: row;
+                /*justify-content: space-between;*/
+                align-items: center;
+                border-radius: 50px;;
+            }
+            
+            #buscador {
+                border: 0;
+                height: calc(100% - 4px);
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            #buscador:focus {
+                outline-width: 0;
+            }
+            
+            .espaciador-header{
+                margin: 0 40px;
+            }
+            
+            .search{
+                
+                font-size: 30;
+                
+            }
+            .icono-input{
+                
+                font-size: 40px;
+                color: white;
+            }
+            .icono-input2{
+                
+                font-size: 30px;
+                color: white;
+            }
+
+            .cuerpo2{
+                width: 100%;
+                border: solid 1px red;
+                position: relative;
+            }
+            .cuerpo2 img{
+                width: 100%;
+            }
+
+            @media (min-width: 560px) {
+                #buscador {
+                
+                    height: calc(100% - 4px);
+                    width: calc(100% - 4px);
+                
+            }
+                
+
+
+            }
+
+
+
+            .navbar__menu, .submenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.navbar__menu > li {
+  width: 100%;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .05);
+  border-width: 0 0 1px;
+  text-align: center;
+  background-color: darkslategrey;
+  display: block;
+  min-height: 40px;
+  
+  position: relative;
+}
+.navbar__menu > li:hover {
+  background-color: dimgray;
+}
+.navbar__menu > li a, .navbar__menu > li label {
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+  display: block;
+  min-height: inherit;
+  padding: 8px;
+}
+
+.submenu > li {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+  background-color: darkred;
+}
+
+input[type="checkbox"]:checked + .navbar__menu, 
+input[type="checkbox"]:checked + .submenu {
+  display: block;
+}
+
+
+
+       </style>
+       
+        <header class="cabecera">
+            
+            
+            <div class="icono-input">
+                <div class="navbar__button">
+                    <label for="show-nav">
+                      <span class="material-icons material-icons-outlined">
+                          <i class="fas fa-bars espaciador-header"></i>
+                        </span>
+                    </label>  
+                </div>
+                <input type="checkbox" id="show-nav" hidden>
+                <ul class="navbar__menu">
+                  <li>
+                    <label for="show-submenu">Ingresar</label>
+                    <input type="checkbox" id="show-submenu" hidden>
+                    <ul class="submenu">
+                      <li><a href="#clothing">Iniciar Sesión</a></li>
+                      <li><a href="#accesories">Crear Cuenta</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#logout">Cerrar Sesion</a></li>
+                </ul>
+            </div>
+
+                <!-- -->
+                <div id="fake-input">
+                    <div>
+
+                    </div>
+                    <input id="buscador" type="text" placeholder="Buscar productos"/>
+                    <div class="search">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <!-- -->
+                <div class="icono-input2">
+                    <i class="fas fa-shopping-cart espaciador-header"></i>
+                </div>
+            
+        </header>
+        
+        
+        <div class="cuerpo2">
+            <img src="/images/img-home-banner.jpg" alt="banner">
+            <h1>hola</h1>
+            <h1><a href="/">Regresar</a></h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta magnam nostrum illo ea, voluptas quia odit perspiciatis accusantium maxime magni velit soluta incidunt atque quo et consequuntur. Pariatur, ex possimus!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima provident quas totam quisquam tenetur repellat fuga repellendus atque illo quidem vitae nisi illum eos, excepturi dolorum dicta molestiae facilis! Illum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vitae repellendus quo modi, ipsa veniam provident? Vel repudiandae accusamus suscipit dicta, fugiat dolore fugit animi ullam, necessitatibus accusantium excepturi doloribus.</p>
+        </div>
+        
+        
     
     
 </body>

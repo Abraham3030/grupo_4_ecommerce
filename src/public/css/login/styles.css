@@ -1,0 +1,74 @@
+*{
+    box-sizing: border-box;
+    font-family: signika-negative-UI;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+}
+
+#logo{
+    max-width: 100%;
+}
+
+.contenedor {
+    border: darkgray solid 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tab-items{
+    display: flex;
+    justify-content: space-around;
+    text-align: center; margin: 10px 0;
+    
+
+}
+.marco {
+    width: 100%;
+       
+    border: 1px solid #ccc;
+    font-weight: 600;
+
+}
+
+p {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    font-family: 'Signika Negative', sans-serif;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-login {
+    width: 90%;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+    
+    
+}

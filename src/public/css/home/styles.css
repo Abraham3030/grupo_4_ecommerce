@@ -69,3 +69,21 @@
     font-weight: bold;
 }
 
+
+/*Modificación*/
+.navbar{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.navbar li{
+    color: black;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: justify;
+}
+input[type="checkbox"]:checked + .navbar{
+    display: block;
+}
+

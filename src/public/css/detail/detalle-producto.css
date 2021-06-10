@@ -1,6 +1,9 @@
 *{
      box-sizing: border-box;
  }
+ p,h1,h2,h3,h4,h5,a,span,li,label,input,button {
+    font-family: 'Signika Negative', sans-serif;
+}
 .container{
     border: solid 1px gold;
     width: 100vw;
@@ -285,4 +288,30 @@ input[type="checkbox"]:checked + .navbar__menu4{
     display: block;
   }
 
-  
+  .footer {
+    display: flex;
+    align-items:flex-start;
+    flex-flow: column;    
+    background-color: #f1f1f2;
+    width: 100%;
+    border: red dotted 1px;
+    
+
+}
+
+.elemento-footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    border-bottom: grey solid 4px;
+    margin: 8px;
+    margin-right: 16px;
+    width: 95%;
+    
+    
+}
+
+.terminos {
+    margin: 8px;
+}
+

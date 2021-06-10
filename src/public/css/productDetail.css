@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+}
+
+p,h1,h2,h3,h4,a,input,button {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+}
+
+.nav-bar > a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar > a:hover,i:hover{
+    color: #00db82;
+}
+
+#logo {
+    max-width: 80px;
+}
+
+.navbar{
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+.navbar li{
+    color: black;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: justify;
+}
+input[type="checkbox"]:checked + .navbar{
+    display: block;
+}
+/*Header <-*/
+
+/*main*/
+ .cuerpo2{
+    margin: 0 5%;
+    width: 90%;
+    position: relative;
+}
+img{
+    width: 100%;
+}
+#imagen-banner{
+    display: none;
+    height: 50PX;
+}
+.contenedor-imagenes-carrito{
+    margin-top: 10px;
+
+}
+
+.contenedor-imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+       
+}
+.imagenes{
+    display: none;
+}
+#imgbody{
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.imagen-principal{
+    display: flex;
+    justify-content: center;
+}
+.detalles{
+    margin: 5%;
+}
+
+#titulo-juego{
+
+    
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.precio{
+    
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.btn{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.label-productCart {
+    
+    width: 20%;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+    
+    
+}
+.espacio-form{
+    width: 5%;
+
+}
+.btn-productCart {
+    width: 75%;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Signika Negative', sans-serif;
+    
+    
+}
+
+
+.descripcion-envio{
+    margin-top: 5%;
+    border: solid 0.5px grey;
+}
+
+
+.descripcion{
+    
+    margin-top: 5% 5%;
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+.detalles-producto, .caracteristicas{
+    
+    margin: 0 5%;
+}
+.espacio{
+    margin-top: 5%;
+    border-bottom: grey solid 1px;
+}
+.envio{
+    padding: 3%;
+    color: green;
+}
+#letra-envio{
+    color: black;
+}
+
+
+
+.navbar__menu2, .navbar__menu3{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+.navbar__menu2 li, .navbar__menu3 li{
+    color: black;
+    margin-top: 5px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: justify;
+}
+input[type="checkbox"]:checked + .navbar__menu2, 
+input[type="checkbox"]:checked + .navbar__menu3{
+    display: block;
+}
+
+
+
+
+
+@media(min-width: 768px){
+    .imagenes{
+        display: block; 
+    }
+
+    #imgbody{
+        
+        width: 100px;
+        
+    }
+    .vista768{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contenedor-imagenes-carrito, .detalles{
+        width: 50%;
+    }
+}
+
+/*----------------*/
+
+
+
+  .footer {
+    display: flex;
+    align-items:flex-start;
+    flex-flow: column;    
+    background-color: #f1f1f2;
+    width: 100%;   
+
+}
+
+.elemento-footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    border-bottom: grey solid 4px;
+    margin: 8px;
+    margin-right: 16px;
+    width: 95%;
+    
+    
+}
+
+.terminos {
+    margin: 8px;
+}
+

@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100vw;
 }
 
 #logo {
@@ -13,7 +14,7 @@
 }
 
 #banner {
-    max-width: 360px;
+    max-width: 100%;
 }
 
 .banner-container {
@@ -87,3 +88,29 @@ input[type="checkbox"]:checked + .navbar{
     display: block;
 }
 
+.footer {
+    display: flex;
+    align-items:flex-start;
+    flex-flow: column;    
+    background-color: #f1f1f2;
+    width: 100%;
+    border: red dotted 1px;
+    
+
+}
+
+.elemento-footer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    border-bottom: grey solid 4px;
+    margin: 8px;
+    margin-right: 16px;
+    width: 95%;
+    
+    
+}
+
+.terminos {
+    margin: 8px;
+}

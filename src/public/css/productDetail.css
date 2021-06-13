@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-p,h1,h2,h3,h4,a,input,button {
+p,h1,h2,h3,h4,a,input,button,li,label {
     font-family: 'Signika Negative', sans-serif;
 }
 
@@ -150,6 +150,7 @@ img{
 .detalles-producto, .caracteristicas{
     
     margin: 0 5%;
+    padding: 20px;
 }
 .espacio{
     margin-top: 5%;
@@ -188,29 +189,6 @@ input[type="checkbox"]:checked + .navbar__menu3{
 
 
 
-@media(min-width: 768px){
-    .imagenes{
-        display: block; 
-    }
-
-    #imgbody{
-        
-        width: 100px;
-        
-    }
-    .vista768{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .contenedor-imagenes-carrito, .detalles{
-        width: 50%;
-    }
-}
-
 /*----------------*/
 
 
@@ -240,3 +218,84 @@ input[type="checkbox"]:checked + .navbar__menu3{
     margin: 8px;
 }
 
+.detalles-producto label:hover, .caracteristicas label:hover {
+    color: #00db82;
+}
+
+.footer-1200 {
+    display: none;
+}
+
+
+@media(min-width: 768px){
+    .imagenes{
+        display: block; 
+    }
+
+    #imgbody{
+        
+        width: 100px;
+        
+    }
+    .vista768{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .contenedor-imagenes-carrito, .detalles{
+        width: 50%;
+    }
+}
+
+@media(min-width: 1200px) {
+
+    .footer{
+        display: none;        
+    }
+    .footer-1200{
+        display: flex;  
+        justify-content: space-evenly;      
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+        background-color: #FAFAFA;
+
+    }
+
+    .footer-1200  ul > li > a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .footer-1200  ul > li > a:hover{
+        color: #00db82;
+    }
+
+    .footer-1200 ul  {
+        list-style-type: none;
+        margin: 0px
+    }
+
+    .footer-1200  h2 {
+        margin-bottom: 0px;
+    }
+
+    .logos-social-media {                   
+        display: inline-block;        
+        align-items: stretch;
+        
+        
+    }
+
+    .logos-social-media > img {
+        max-width: 25px;
+        height: auto;
+        margin: 5px;
+        align-items: center;
+        
+    }
+
+    
+}

@@ -114,3 +114,16 @@ input[type="checkbox"]:checked + .navbar{
 .terminos {
     margin: 8px;
 }
+
+p,h1,h2,h3,h4,a,input,button {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, i:hover {
+    color: #00db82;
+}

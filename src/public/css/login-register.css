@@ -2,6 +2,14 @@
     box-sizing: border-box;
     font-family: signika-negative-UI;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: #00db82;
+}
 
 .nav-bar {
     display: flex;

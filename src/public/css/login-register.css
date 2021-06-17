@@ -19,7 +19,8 @@ a:hover {
 }
 
 #logo{
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
 }
 
 .contenedor {
@@ -160,11 +161,7 @@ input[type=text], input[type=password] {
         margin: 5px;
         align-items: center;
         
-    }
-
-    #logo {
-        max-width: 800px;
-    }
+    }    
 
     
 }

@@ -8,5 +8,6 @@ del sprint salieron en tiempo y forma para terminar
 el sprint 1. 
 
 
-##Cesar Antonio Villa Flores:
+## Cesar Antonio Villa Flores:  
+
 Creo que trabajamos muy comodos, tenemos una buena relacion de equipo, debemos de mantenerlo de esa manera, cosas por mejorar estan mas relacionadas a nuestras habilidades como desarrolladores, y para eso estamos aqui.

@@ -2,16 +2,75 @@
     box-sizing: border-box;
 }
 
-.nav-bar {
+/*Nuevo header*/
+header {
+    width: 100%;
+    height: 56px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-content: center;
+}
+#logo-header img {
+    max-width: 100%;
+    height: 56px;  
+}
+#logo-header {
+    width: 20%;
+}
+#buscador {
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    width: 80%;
+}
+#boton-search {
+    border: 0;
+    width: 20%;
+}
+#search {
+    width: 50%;
+    padding: 6px;
+}
+#form-search {
+    border-radius: 5px;
+    border: solid #00db82 2px;
+    display: flex;
+    height: 44px;
+}
+#boton-search {
+    border-radius: 3px;
+    color: white;
+    background-color: #00db82;
+    text-align: center;
+}
+.contenedor-login-fas{
+    width: 100%;
+    margin: 5px;
+}
+#login, #hamburguer{
+    width: 20%;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 100vw;
+    text-align: center;
+    font-size: 30px;
 }
+#user {
+    display: none;
+}
+#cart, #bars{
+    background-color: #00db82;
+    border-radius: 5px;
+    padding: 5px;
+}
+.fa-shopping-cart, .fa-user, .fa-search, .fa-bars {
+    color: white;
+}
+/*Fin Nuevo Header*/
 
-#logo {
-    max-width: 80px;
-}
+
+
+
 
 #banner {
     max-width: 100%;
@@ -126,4 +185,33 @@ a {
 
 a:hover, i:hover {
     color: #00db82;
+}
+
+
+@media (min-width: 768px) {
+    /*Nuevo header*/
+    #hamburguer {
+        width: 10%;
+    }
+    #login {
+        width: 10%;
+    }
+    #search {
+        width: 60%;
+    }
+    #login {
+        width: 20%;
+    }
+    #logo-header img {
+        width: 100%;
+    }
+    #user {
+        display: block;
+        background-color: #00db82;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    /*Fin Nuevo header*/
+
 }

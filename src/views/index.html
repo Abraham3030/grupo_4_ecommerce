@@ -11,22 +11,32 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="nav-bar">
-
-            <i class="fas fa-bars">
-                <input type="checkbox" id="show-nav" hidden>
-                            <ul class="navbar">
-                                <li><a href="">Crear Cuenta</a></li>
-                                <li><a href="">Ingresar</a></li>
-                            </ul>
-            </i>
+        <form id="hamburguer">
+            <div class="contenedor-login-fas" id="bars">
+                <a  href="/register" >
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+        </form>
+        <div id="logo-header">
             <img id="logo" src="/images/logoGameUp.png"/>
-            <i class="fas fa-search"></i>
-            <a href="/login">Ingresar</a>
-            </div>                        
-        </nav>
+        </div>
+        <div id="search">
+            <form action="#" id="form-search">
+                <input id="buscador" type="text" placeholder="Buscar productos"/>
+                <button id="boton-search"><i class="fas fa-search"></i></button>
+            </form>                               
+        </div>
+        <form id="login">
+            <div class="contenedor-login-fas" id="user">
+                <a href="/login"><i class="far fa-user"></i></a>
+            </div>
+            <div class="contenedor-login-fas" id="cart">
+                <a href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </form>
     </header>
+    
     <div class="banner-container">
         <i class="fas fa-chevron-left flechas"></i>        
         <img id="banner" src="/images/index/img-home-banner.jpg"/>
